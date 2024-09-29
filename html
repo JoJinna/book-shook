@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Shook</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="search-bar">
+      <input
+        type="text"
+        placeholder="Search the Archives..."
+        class="search-input"
+      />
+      <button class="search-button">Go</button>
+    </div>
+  </body>
+
+  <div class="video-container">
+    <h1>Book Shook</h1>
+    <video width="640" height="260" controls>
+      <source
+        src="https://cdn.glitch.global/2c2f4819-6814-4c8f-9925-6f0a9f94f8e7/WhatsApp%20Video%202024-09-28%20at%2022.07.37_0403dc74.mp4?v=1727576970890"
+        type="video/mp4"
+      />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="y2ksearch">
+    <style>
+      h2.browse {
+        font-family: "Arial", sans-serif;
+        color: #00ffea;
+        font-size: 2.5em;
+        padding: 10px 20px;
+        text-align: center;
+        position: relative;
+        display: inline-block;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        background: linear-gradient(45deg, #ff00ff, #00ffff);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+
+      h2.browse::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: 4px solid #00ffea;
+        border-radius: 10px;
+        background: linear-gradient(
+          45deg,
+          rgba(255, 0, 255, 0.5),
+          rgba(0, 255, 255, 0)
+        );
+        z-index: -1;
+        filter: blur(5px);
+        transition: 0.5s;
+      }
+      h2.browse:hover::before {
+        filter: blur(0);
+      }
+      h2.browse::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: 4px solid #ff00ff;
+        border-radius: 10px;
+        background: linear-gradient(
+          45deg,
+          rgba(255, 0, 255, 0.2),
+          rgba(0, 255, 255, 0.2)
+        );
+        z-index: -2;
+      }
+
+      label {
+        display: block;
+        /* Creates space between the H2 and the label */
+        text-align: left;
+        font-family: "Baloo 2", cursive;
+        font-size: 3.2em;
+        color: #ff00ff;
+      }
+    </style>
+  </div>
+
+  <body>
+    <h2 class="browse">books and movies 6 - 12</h2>
+    <label for="Links-for-six-seventh">Grades 6-7</label>
+    <select id="Links-for-six-seventh" onchange="openLink()">
+      <option value="">--Select an option--</option>
+      <option value="https://www.broward.org/Library/Pages/TheStudio.aspx">
+        Example 1
+      </option>
+      <option value="https://www.goodreads.com/book/show/3636.The_Giver">
+        Example 2
+      </option>
+      <option
+        value="https://www.google.com/books/edition/Holes/U_zINMa9cAAC?hl=en&gbpv=0"
+      >
+        Example 3
+      </option>
+    </select>
+
+    <script>
+      function openLink() {
+        var selectedValue = document.getElementById(
+          "Links-for-six-seventh"
+        ).value;
+        if (selectedValue) {
+          window.location.href = selectedValue;
+        }
+      }
+    </script>
+
+    <h4 class="browse1"></h4>
+    <label for="Links-for-eigth-nineth">Grades 8-9</label>
+    <select id="Links-for-eight-nineth" onchange="openLink()">
+      <option value="https://mdpls.overdrive.com/media/789876?utm_campaign=searchfeed&utm_source=google" > --Select an option--</option>
+      <option value="https://rickriordan.com/book/the-lightning-thief/">Example 1</option>
+    <option value="">Example 2</option>
+      <option value="https://www.goodreads.com/book/show/89731.Kira_Kira">Example 3</option>
+    </select>
+
+    <script>
+      function openLink() {
+        var selectedValue = document.getElementById(
+          "Links-for-eight-nineth"
+        ).value;
+        if (selectedValue) {
+          window.location.href = selectedValue;
+        }
+      }
+    </script>
+  <h5 class="browse2"></h5>
+<label for="Links-for-ten-eleven">Grades 10-11</label>
+<select id="Links-for-ten-eleven" onchange="openLink()">
+  <option value="">--Select an option--</option>
+  <option value="https://www.cscbroward.org/news/broward-reads/">Example 1</option>
+  <option value="https://archive.org/details/greatgatsby0000unse_c4w8">Example 2</option>
+  <option value="https://www.cfbroward.org/focus-areas/education-youth-enrichment">Example 3</option>
+</select>
+
+<script>
+  function openLink() {
+    var selectedValue = document.getElementById("Links-for-ten-eleven").value;
+    if (selectedValue) {
+      window.location.href = selectedValue;
+    }
+  }
+</script>
+
+ 
+
+    <h6 class="browse3"></h6>
+    <label for="12">Grade 12 </label>
+    <select id="12" onchange="openLink()">
+      <option value="">--Select an option--</option>
+      <option value="https://browardedfoundation.org/what-we-do/students/">Example 1</option>
+      <option value="https://mdpls.overdrive.com/media/181600?utm_campaign=searchfeed&utm_source=google">Example 2</option>
+      <option value="https://mdpls.overdrive.com/media/26488?utm_campaign=searchfeed&utm_source=google" >Example 3</option>
+    </select>
+
+    <script>
+      function openLink() {
+        var selectedValue = document.getElementById("12").value;
+        if (selectedValue) {
+          window.location.href = selectedValue;
+        }
+      }
+    </script>
+
+    <div class="friends-box-with-dots">
+      <p></p>
+      <div class="header">
+        Reading Analysis
+        <a
+          href="https://cdn.glitch.global/2c2f4819-6814-4c8f-9925-6f0a9f94f8e7/bookanalysis.docx?v=1727615220842"
+          download
+          >Download Word Document</a
+        >
+        <p></p>
+
+        Book of the month
+        <a
+          href="https://cdn.glitch.global/2c2f4819-6814-4c8f-9925-6f0a9f94f8e7/bookshook.docx?v=1727613401967"
+          download
+          >Download Word Document</a
+        >
+        <p></p>
+        Manga anmie and books
+        <a href="https://www.webtoons.com/en/" download>Access links</a>
+      </div>
+    </div>
+    <style>
+      footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        background-color: #9d00ff; /* Dark background for a Y2K feel */
+        padding: 20px;
+        color: #ffffff; /* Light text color for contrast */
+      }
+      .left,
+      .center,
+      .right {
+        flex: 1;
+        padding: 10px;
+      }
+      h3 {
+        font-family: "Orbitron", sans-serif;
+        font-size: 2em;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #ff69b4; /* Neon pink for Y2K vibe */
+        margin-bottom: 10px;
+      }
+      a img {
+        border: 3px solid #ff69b4;
+        border-radius: 15px;
+        box-shadow: 0 0 20px #ff69b4; /* Neon glow effect around the image */
+        transition: transform 0.3s ease-in-out;
+      }
+      a img:hover {
+        transform: scale(1.1); /* Slight zoom effect on hover */
+      }
+      p {
+        font-family: "Orbitron", sans-serif;
+        font-size: 1.2em;
+        color: #00ffcc; /* Light teal for a retro-tech look */
+        margin-top: 10px;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #1a1a1a;
+      }
+    </style>
+
+    <footer>
+      <h3>Wait........... I'm Learning</h3>
+      <p>( Click the icons to acess reading games )</p>
+      <a href="https://www.getepic.com/">
+        <img
+          src="https://cdn.glitch.global/2c2f4819-6814-4c8f-9925-6f0a9f94f8e7/9286491.jpg?v=1727589839009"
+          alt="Game Image"
+          style="width: 150px"
+        />
+      </a>
+      <a href="https://www.abcya.com/">
+        <img
+          src="https://cdn.glitch.global/2c2f4819-6814-4c8f-9925-6f0a9f94f8e7/5797050.jpg?v=1727594474981"
+          alt="Game Image"
+          style="width: 150px"
+        />
+      </a>
+
+      <a href="https://www.funbrain.com/">
+        <img
+          src="https://cdn.glitch.global/2c2f4819-6814-4c8f-9925-6f0a9f94f8e7/9286491.jpg?v=1727589839009"
+          alt="Game Image"
+          style="width: 150px"
+        />
+      </a>
+    </footer>
+  </body>
+</html>
